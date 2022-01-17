@@ -47,7 +47,7 @@ function draw()
             document.getElementById("status").innerHTML = "Objects Detected";
             fill("red");
             percent = floor(objects[i].confidence * 100);
-            text(objects[i].label + " " + percent + "%" , objects[i].x , object[i].y);
+            text(objects[i].label + " " + percent + "%" , objects[i].x , objects[i].y);
             stroke("red");
             noFill();
             rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height); 
